@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 40px;
+    margin: 220px 620px ;
+}
+
+.le {
+    border: 5px solid rgb(102, 129, 26);
+    background-color: rgb(85, 172, 77);
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 400px;
+    top:  150px;
+    transform-origin: left; 
+    transition: 2s;  
+}
+.pr {
+    border: 5px solid rgb(102, 129, 26);
+    background-color: rgb(85, 172, 77);
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 700px;
+    top:  150px;
+    transform-origin: right; 
+    transition: 2s;   
+}
+.block:hover .le {
+    transform: perspective(1000px) rotateY(50deg); 
+
+}
+.block:hover .pr {
+    transform: perspective(1000px) rotateY(-50deg); 
+} 
